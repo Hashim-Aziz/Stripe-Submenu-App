@@ -1,8 +1,14 @@
 import React from "react";
 import Hero from "./Hero";
+import Navbar from "./Navbar";
 
 function App() {
-  return <Hero />;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
 }
 
 export default App;

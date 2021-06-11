@@ -6,6 +6,7 @@ import { useGlobalContext } from "./context";
 const Navbar = () => {
   const { openSidebar, openSubMenu, closeSubMenu } = useGlobalContext();
 
+  //this function get current hover nav link and calculate center and bottom of submenu box then pass to function
   const displaySubmenu = (e) => {
     const page = e.target.textContent;
     const tempBtn = e.target.getBoundingClientRect();

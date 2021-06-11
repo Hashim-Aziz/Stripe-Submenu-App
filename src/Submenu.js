@@ -7,8 +7,12 @@ const Submenu = () => {
     location,
     page: { page, links },
   } = useGlobalContext();
+
+  //useRef hook is use fro inline styling of submenu box
   const container = useRef(null);
   const [columns, setColumns] = useState("col-2");
+
+  //useEffect hook is use to dynamically se the position/style of submenu box with respect to hover navbar link
   useEffect(() => {
     setColumns("col-2");
     const submenu = container.current;
